@@ -9,11 +9,10 @@ A Spring Boot application built with Kotlin that provides REST API functionality
 - [API Endpoints](#api-endpoints)
 - [Testing the API](#testing-the-api)
 - [Running Tests](#running-tests)
-- [Project Structure](#project-structure)
 
 ## Prerequisites
 
-- **Java 24** or higher
+- **Java 17** or higher (Java 21 LTS recommended)
 - **Maven 3.6+** (Maven wrapper is included in the project)
 - **Terminal/Command Line** access
 
@@ -30,6 +29,16 @@ A Spring Boot application built with Kotlin that provides REST API functionality
    java -version
    ```
    Make sure you have Java 24 or higher installed.
+
+3. **Build the application:**
+   ```bash
+   # Using Maven wrapper (recommended)
+   ./mvnw clean compile
+   
+   # Or using installed Maven
+   mvn clean compile
+   ```
+
 
 ## Running the Application
 
