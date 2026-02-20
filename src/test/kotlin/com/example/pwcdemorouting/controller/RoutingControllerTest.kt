@@ -1,7 +1,7 @@
-package com.example.routing.controller
+package com.example.pwcdemorouting.controller
 
 
-import com.example.routing.service.RoutingProvider
+import com.example.pwcdemorouting.service.RoutingProvider
 import org.junit.jupiter.api.Test
 import org.mockito.ArgumentMatchers
 import org.mockito.Mockito

@@ -1,7 +1,7 @@
-package com.example.routing.controller
+package com.example.pwcdemorouting.controller
 
-import com.example.routing.RouteResponse
-import com.example.routing.service.RoutingProvider
+import com.example.pwcdemorouting.RouteResponse
+import com.example.pwcdemorouting.service.RoutingProvider
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

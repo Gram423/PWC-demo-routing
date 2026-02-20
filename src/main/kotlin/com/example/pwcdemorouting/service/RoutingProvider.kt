@@ -1,24 +1,22 @@
-package com.example.routing.service
+package com.example.pwcdemorouting.service
 
-import com.example.routing.model.Country
+import com.example.pwcdemorouting.model.Country
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import jakarta.annotation.PostConstruct
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestTemplate
 import java.util.*
 
 @Service
-class RoutingProvider {
+class RoutingProvider @Autowired constructor(
     private val restTemplate: RestTemplate
-    private val objectMapper: ObjectMapper
-    private val countryBorders: MutableMap<String?, MutableList<String?>?>
+) {
 
-    init {
-        this.restTemplate = RestTemplate()
-        this.objectMapper = ObjectMapper()
-        this.countryBorders = HashMap<String?, MutableList<String?>?>()
-    }
+    private val objectMapper = ObjectMapper()
+
+    private val countryBorders: MutableMap<String?, MutableList<String?>?> = HashMap()
 
     companion object {
         private const val COUNTRIES_URL = "https://raw.githubusercontent.com/mledoze/countries/master/countries.json"

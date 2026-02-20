@@ -1,4 +1,4 @@
-package com.example.routing.model
+package com.example.pwcdemorouting.model
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty
